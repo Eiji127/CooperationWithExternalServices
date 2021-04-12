@@ -6,11 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		987515922624496E00F46435 /* EncodeAndDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987515912624496E00F46435 /* EncodeAndDecode.swift */; };
-		9875159B2624564C00F46435 /* EncodeAndDecodeForCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9875159A2624564C00F46435 /* EncodeAndDecodeForCodable.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		9875158C2624496E00F46435 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -27,6 +22,8 @@
 		9875158E2624496E00F46435 /* CooperationWithExternalServices */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CooperationWithExternalServices; sourceTree = BUILT_PRODUCTS_DIR; };
 		987515912624496E00F46435 /* EncodeAndDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeAndDecode.swift; sourceTree = "<group>"; };
 		9875159A2624564C00F46435 /* EncodeAndDecodeForCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeAndDecodeForCodable.swift; sourceTree = "<group>"; };
+		9875159F262474FA00F46435 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		987515A32624780C00F46435 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +56,28 @@
 		987515902624496E00F46435 /* CooperationWithExternalServices */ = {
 			isa = PBXGroup;
 			children = (
+				9875159E262474CB00F46435 /* HTTPCommunication */,
+				9875159D2624746000F46435 /* EncodingAndDecoding */,
+			);
+			path = CooperationWithExternalServices;
+			sourceTree = "<group>";
+		};
+		9875159D2624746000F46435 /* EncodingAndDecoding */ = {
+			isa = PBXGroup;
+			children = (
 				987515912624496E00F46435 /* EncodeAndDecode.swift */,
 				9875159A2624564C00F46435 /* EncodeAndDecodeForCodable.swift */,
 			);
-			path = CooperationWithExternalServices;
+			path = EncodingAndDecoding;
+			sourceTree = "<group>";
+		};
+		9875159E262474CB00F46435 /* HTTPCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				9875159F262474FA00F46435 /* URLRequest.swift */,
+				987515A32624780C00F46435 /* HTTPURLResponse.swift */,
+			);
+			path = HTTPCommunication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9875159B2624564C00F46435 /* EncodeAndDecodeForCodable.swift in Sources */,
-				987515922624496E00F46435 /* EncodeAndDecode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
